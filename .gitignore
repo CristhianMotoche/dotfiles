@@ -4,8 +4,6 @@ autoload/*
 .netrwhist
 config/
 doc/
-ftplugin/
-pluggins/
 plugin/
 rplugin/
 
