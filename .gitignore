@@ -1,0 +1,11 @@
+bundle/*
+autoload/*
+.init.vim-rplugin~
+.netrwhist
+config/
+doc/
+ftplugin/
+pluggins/
+plugin/
+rplugin/
+
