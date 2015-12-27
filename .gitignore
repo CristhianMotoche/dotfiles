@@ -2,7 +2,6 @@ bundle/*
 autoload/*
 .init.vim-rplugin~
 .netrwhist
-config/
 doc/
 plugin/
 rplugin/
