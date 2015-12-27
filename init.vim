@@ -39,7 +39,14 @@ let g:deoplete#enable_at_startup = 1
 let g:haskellmode_completion_ghc = 0
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
-execute pathogen#infect()
+call g:plug#begin('~/.config/nvim/bundle')
+
+if filereadable(expand('~/.config/nvim/pluggins.vim'))
+  source ~/.config/nvim/pluggins.vim
+endif
+
+call g:plug#end()
+
 source ~/.config/nvim/pluggins/autoclose.vim
 source ~/.config/nvim/pluggins/haskell.vim
 source ~/.config/nvim/config/binds.vim
