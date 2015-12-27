@@ -1,7 +1,7 @@
 cd /tmp
 git clone https://github.com/Shougo/deoplete.nvim.git
 cd deoplete.nvim/
-rm -rf .git .gitignore
+rm -rf .git .gitignore test
 cp -r * ~/.config/nvim
 
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
