@@ -1,0 +1,12 @@
+[alias]
+    d = diff
+    co = checkout
+    cl = clone
+    st = status
+    br = branch
+    cmt = commit
+[user]
+	name = CristhianMotoche
+	email = cristhian.motoche@gmail.com
+[core]
+    editor = nvim
