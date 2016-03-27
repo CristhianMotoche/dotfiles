@@ -40,6 +40,10 @@ let g:deoplete#enable_at_startup = 1
 let g:haskellmode_completion_ghc = 0
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
+set tags=tags;/,codex.tags;/
+
 call g:plug#begin('~/.config/nvim/bundle')
 
 if filereadable(expand('~/.config/nvim/pluggins.vim'))
