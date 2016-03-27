@@ -8,9 +8,10 @@ set cursorline " show cursor position
 set expandtab " replace tabs with spaces
 
 " Colorschema
-colorscheme elflord
+colorscheme ron
 
 " Display line number
+set rnu
 set number
 
 " Set syntax on

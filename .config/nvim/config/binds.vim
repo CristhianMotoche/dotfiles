@@ -42,6 +42,8 @@ map <Leader>e :e <C-R>=expand("%:p:h") . '/'<CR>
 map <Leader>v :vnew <C-R>=expand("%:p:h") . '/'<CR>
 map <leader>r :source ~/.vimrc<CR>:set wrap!<CR>
 map <leader>z :NeoSnippetEdit<CR>
+map <leader>t :tabnew<CR>
+map <leader>p :CtrlPTag<CR>
 
 "quita oids de fixtures de mongo
 map <leader>o :%s/{\s"\$oid"\s:\s\(".\{24\}"\)\s}/id(\1)/g<CR>
