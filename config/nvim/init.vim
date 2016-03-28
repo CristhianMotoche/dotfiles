@@ -7,8 +7,17 @@ set cursorline " show cursor position
 " Replace tabs whit spaces
 set expandtab " replace tabs with spaces
 
+" Set color
+set t_Co=256
+
 " Colorschema
 colorscheme ron
+
+" Clipboard
+set clipboard+=unnamedplus
+
+" Set noswap
+set noswapfile
 
 " Display line number
 set rnu
@@ -19,10 +28,10 @@ syntax on
 filetype plugin indent on
 
 " size of a hard tabstop
-set tabstop=4
+set tabstop=2
 
 " size of an "indent"
-set shiftwidth=4
+set shiftwidth=2
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -36,9 +45,16 @@ autocmd BufWritePost * Neomake
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 
+" Ag
+let g:ag_working_path_mode="r"
+
 " Disable haskell-vim omnifunc
 let g:haskellmode_completion_ghc = 0
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+
+" Neco
+let g:necoghc_enable_detailed_browse = 1
+let g:deoplete#enable_at_startup = 1
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
