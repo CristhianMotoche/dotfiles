@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo
+echo "Here's the versions that you have:"
+ls -l /opt/xampp | awk '{print $9}'
+
+echo
+echo "Which would you like to activate?"
+echo
+
+read version
+
+echo
+sudo /opt/lampp/lampp stop
+
+sudo rm /opt/lampp
+sudo ln -s /opt/xampp/$version /opt/lampp
+
+echo
+sudo /opt/lampp/lampp start
+
+echo
+echo "Done!"
+echo

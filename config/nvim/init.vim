@@ -56,6 +56,11 @@ autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 let g:necoghc_enable_detailed_browse = 1
 let g:deoplete#enable_at_startup = 1
 
+" EMMET
+let g:user_emmet_leader_key='<C-m>'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 set tags=tags;/,codex.tags;/
@@ -73,3 +78,6 @@ source ~/.config/nvim/pluggins/haskell.vim
 source ~/.config/nvim/config/binds.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/ftplugin/haskell.vim
+
+source ~/.config/nvim/pluggins/vim-autotag/plugin/autotag.vim
+augroup autotag
