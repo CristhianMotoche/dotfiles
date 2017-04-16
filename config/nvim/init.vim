@@ -61,23 +61,26 @@ let g:user_emmet_leader_key='<C-m>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
+" PSC ide log level
+let g:psc_ide_syntastic_mode = 1
+let g:psc_ide_log_level = 3
+
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 set tags=tags;/,codex.tags;/
 
+" PLUGINGS
 call g:plug#begin('~/.config/nvim/bundle')
-
-if filereadable(expand('~/.config/nvim/pluggins.vim'))
-  source ~/.config/nvim/pluggins.vim
-endif
-
+  if filereadable(expand('~/.config/nvim/pluggins.vim'))
+    source ~/.config/nvim/pluggins.vim
+  endif
 call g:plug#end()
 
+" Extras
 source ~/.config/nvim/pluggins/autoclose.vim
 source ~/.config/nvim/pluggins/haskell.vim
 source ~/.config/nvim/config/binds.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/ftplugin/haskell.vim
-
 source ~/.config/nvim/pluggins/vim-autotag/plugin/autotag.vim
 augroup autotag

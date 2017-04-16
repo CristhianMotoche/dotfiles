@@ -21,8 +21,8 @@ nnoremap <F4> :SSave<CR>
 let mapleader = ","
 map + <leader><leader>w
 map <leader>+ <leader><leader>b
-map <leader>j <leader><leader>j
-map <leader>k <leader><leader>k
+map <leader>j :wincmd j<CR>
+map <leader>k :wincmd k<CR>
 nmap <leader>h :wincmd h<CR>
 nmap <leader>l :wincmd l<CR>
 noremap <leader>s :update<CR>
@@ -44,13 +44,20 @@ map <leader>r :source ~/.vimrc<CR>:set wrap!<CR>
 map <leader>z :NeoSnippetEdit<CR>
 map <leader>t :tabnew<CR>
 map <leader>p :CtrlPTag<CR>
+map gl :BuffergatorMruCyclePrev<CR>
+map gL :BuffergatorMruCycleNext<CR>
 
-"quita oids de fixtures de mongo
+" Remove OIDS of mongo fixtures
 map <leader>o :%s/{\s"\$oid"\s:\s\(".\{24\}"\)\s}/id(\1)/g<CR>
 
-"injecta function done en jasmine it, beforeEach o afterEach
+" Inject function done in jasmine it, beforeEach o afterEach
 map <leader>d ?it\\|beforeEach\\|afterEach<cr>f)idone<esc>:w<cr>/<up><up><cr><C-o>
 
-"Desactivar el highlight de la última búsqueda con ENTER"
+" Deactive highlight in the last search with ENTER
 nnoremap <CR> :noh<CR><CR>
 
+" For local replace
+nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
+
+" For global replace
+nnoremap gR gD:%s/<C-R>///gc<left><left><left>
