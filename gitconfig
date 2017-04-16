@@ -6,8 +6,9 @@
   br = branch
   cmt = commit
 [user]
-	name = CristhianMotoche
-	email = cristhian.motoche@gmail.com
+  name = CristhianMotoche
+  email = cristhian.motoche@gmail.com
 [core]
   editor = nvim
   excludesfile = ~/.gitignore
+  pager = diff-so-fancy | less
