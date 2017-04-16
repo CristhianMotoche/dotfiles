@@ -12,3 +12,9 @@ CONTRIBUTING.md
 Makefile
 README.md
 run_tests.sh
+
+# Vim
+config/nvim/LICENSE
+config/nvim/autoload/
+config/nvim/bundle/
+

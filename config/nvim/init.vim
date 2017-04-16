@@ -82,5 +82,4 @@ source ~/.config/nvim/pluggins/haskell.vim
 source ~/.config/nvim/config/binds.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/ftplugin/haskell.vim
-source ~/.config/nvim/pluggins/vim-autotag/plugin/autotag.vim
 augroup autotag
