@@ -53,3 +53,6 @@ precmd() { eval "$PROMPT_COMMAND" }
 
 # HEROKU
 PATH="/usr/local/heroku/bin:$PATH"
+
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

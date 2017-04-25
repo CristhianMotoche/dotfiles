@@ -14,7 +14,7 @@ set t_Co=256
 colorscheme ron
 
 " Clipboard
-set clipboard+=unnamedplus
+" set clipboard+=unnamedplus
 
 " Set noswap
 set noswapfile
@@ -79,6 +79,8 @@ call g:plug#end()
 " Extras
 source ~/.config/nvim/pluggins/autoclose.vim
 source ~/.config/nvim/pluggins/haskell.vim
+source ~/.config/nvim/config/snippet.vim
+source ~/.config/nvim/config/syntastic.vim
 source ~/.config/nvim/config/binds.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/ftplugin/haskell.vim

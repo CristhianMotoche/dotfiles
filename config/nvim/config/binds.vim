@@ -30,7 +30,7 @@ vnoremap <leader>s <C-C>:update<CR>
 inoremap <leader>s <C-O>:update<CR><ESC>
 nnoremap <leader>v <C-w>v
 nmap <leader>n :NERDTreeToggle<CR>
-nmap <leader>m :NERDTree<CR>
+nmap <leader>m :make<CR>
 nmap <leader>q :q<CR>
 nmap <leader><S-q> :q<CR> :Gedit<CR>
 nmap <leader>f <S-v>/{<cr>%
@@ -40,7 +40,7 @@ nmap <leader><S-d> :GitGutterDisable<CR>:Gdiff<CR>zR
 map <Leader>c ggVG"*y
 map <Leader>e :e <C-R>=expand("%:p:h") . '/'<CR>
 map <Leader>v :vnew <C-R>=expand("%:p:h") . '/'<CR>
-map <leader>r :source ~/.vimrc<CR>:set wrap!<CR>
+map <leader>r :source ~/.config/nvim/init.vim<CR>:set wrap!<CR>
 map <leader>z :NeoSnippetEdit<CR>
 map <leader>t :tabnew<CR>
 map <leader>p :CtrlPTag<CR>
