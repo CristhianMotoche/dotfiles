@@ -69,6 +69,9 @@ let g:psc_ide_log_level = 3
 nmap <F8> :TagbarToggle<CR>
 set tags=tags;/,codex.tags;/
 
+" Enable hardtime
+let g:hardtime_default_on = 1
+
 " PLUGINGS
 call g:plug#begin('~/.config/nvim/bundle')
   if filereadable(expand('~/.config/nvim/pluggins.vim'))
