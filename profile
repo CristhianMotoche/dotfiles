@@ -1,6 +1,6 @@
 # ALIAS
 # SOURCE ZSH
-alias upz="source /home/camm/.zshrc"
+alias upz="source ${HOME}/.zshrc"
 
 # NVIM
 alias vim="nvim"
@@ -30,7 +30,7 @@ alias xampp-mysql="sudo /opt/lampp/bin/mysql"
 alias xampp-mysqldump="sudo /opt/lampp/bin/mysqldump"
 
 # NVIM
-export NVM_DIR="/home/camm/.nvm"
+export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # CABAL
@@ -44,7 +44,7 @@ export PATH=$PATH:$HOME/.psvm/current/bin
 
 # SCALA
 export PATH=$PATH:$HOME/.scala/scala-2.11.8/bin
-export ACTIVATOR_HOME=/home/camm/.scala/activator-1.3.10/activator-dist-1.3.10/bin/
+export ACTIVATOR_HOME="${HOME}/.scala/activator-1.3.10/activator-dist-1.3.10/bin/"
 export PATH=$PATH:$ACTIVATOR_HOME
 
 # PROMPT_COMMAND
