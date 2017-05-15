@@ -1,6 +1,6 @@
 Plug 'kien/ctrlp.vim'
 Plug 'neovimhaskell/haskell-vim'
-Plug 'eagletmt/neco-ghc'
+" Plug 'eagletmt/neco-ghc'
 Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-sensible'

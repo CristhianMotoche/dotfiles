@@ -70,7 +70,9 @@ nmap <F8> :TagbarToggle<CR>
 set tags=tags;/,codex.tags;/
 
 " Enable hardtime
-let g:hardtime_default_on = 1
+let g:hardtime_default_on = 0
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_use_smartsign_us = 1
 
 " PLUGINGS
 call g:plug#begin('~/.config/nvim/bundle')

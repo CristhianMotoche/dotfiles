@@ -17,6 +17,11 @@ vmap <C-j> xp`[V`]
 
 nnoremap <F4> :SSave<CR>
 
+" Easymotion
+nmap h <Plug>(easymotion-b)
+nmap l <Plug>(easymotion-w)
+nmap j <Plug>(easymotion-overwin-line)
+nmap k <Plug>(easymotion-overwin-f2)
 
 let mapleader = ","
 map + <leader><leader>w
