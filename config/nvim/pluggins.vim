@@ -25,3 +25,4 @@ Plug 'derekwyatt/vim-scala'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'keith/swift.vim'
+Plug 'manasthakur/vim-commentor'
