@@ -1,4 +1,9 @@
 tags
 TAGS
 
+_build/
+global-stack.yaml
+npm-debug.log
+.eslintrc.json
+
 .env

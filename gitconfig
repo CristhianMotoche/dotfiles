@@ -5,6 +5,8 @@
   st = status
   br = branch
   cmt = commit
+  rct = rebase --continue
+  dch = diff --cached
 [user]
   name = CristhianMotoche
   email = cristhian.motoche@gmail.com
@@ -12,3 +14,5 @@
   editor = nvim
   excludesfile = ~/.gitignore
   pager = diff-so-fancy | less
+[push]
+	default = matching
