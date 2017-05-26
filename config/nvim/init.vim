@@ -88,5 +88,6 @@ source ~/.config/nvim/config/snippet.vim
 source ~/.config/nvim/config/syntastic.vim
 source ~/.config/nvim/config/binds.vim
 source ~/.config/nvim/config/whitespace.vim
+source ~/.config/nvim/config/emmet.vim
 source ~/.config/nvim/ftplugin/haskell.vim
 augroup autotag
