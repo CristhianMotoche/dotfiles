@@ -1,11 +1,9 @@
 nnoremap    <F3> :<C-U>setlocal lcs=tab:>-,trail:·,eol:$ list! list? <CR>
 
-
 " contro-s saving
 noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR><ESC>
-
 
 " Bubble single lines
 nmap <C-k> ddkP
@@ -18,10 +16,10 @@ vmap <C-j> xp`[V`]
 nnoremap <F4> :SSave<CR>
 
 " Easymotion
-nmap h <Plug>(easymotion-b)
-nmap l <Plug>(easymotion-w)
-nmap j <Plug>(easymotion-overwin-line)
-nmap k <Plug>(easymotion-overwin-f2)
+nmap H <Plug>(easymotion-b)
+nmap L <Plug>(easymotion-w)
+nmap J <Plug>(easymotion-overwin-line)
+nmap K <Plug>(easymotion-overwin-f2)
 
 let mapleader = ","
 map + <leader><leader>w
@@ -51,6 +49,11 @@ map <leader>t :tabnew<CR>
 map <leader>p :CtrlPTag<CR>
 map gl :BuffergatorMruCyclePrev<CR>
 map gL :BuffergatorMruCycleNext<CR>
+
+" Buffers
+map gb :bp<CR>
+map gB :bn<CR>
+map <Leader>b :buffers<CR>
 
 " Remove OIDS of mongo fixtures
 map <leader>o :%s/{\s"\$oid"\s:\s\(".\{24\}"\)\s}/id(\1)/g<CR>
