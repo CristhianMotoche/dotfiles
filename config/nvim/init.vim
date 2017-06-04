@@ -84,6 +84,7 @@ call g:plug#end()
 " Extras
 source ~/.config/nvim/pluggins/autoclose.vim
 source ~/.config/nvim/pluggins/haskell.vim
+source ~/.config/nvim/config/ctrlp.vim
 source ~/.config/nvim/config/snippet.vim
 source ~/.config/nvim/config/syntastic.vim
 source ~/.config/nvim/config/binds.vim
