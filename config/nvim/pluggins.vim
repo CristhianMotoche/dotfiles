@@ -12,11 +12,9 @@ Plug 'takac/vim-hardtime'
 Plug 'easymotion/vim-easymotion'
 Plug 'mattn/emmet-vim'
 
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
-
-Plug 'jeetsukumaran/vim-buffergator'
 Plug 'vim-syntastic/syntastic'
 
 Plug 'leafgarland/typescript-vim'
@@ -27,3 +25,4 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'keith/swift.vim'
 Plug 'manasthakur/vim-commentor'
+Plug 'ElmCast/elm-vim'
