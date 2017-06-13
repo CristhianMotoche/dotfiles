@@ -12,7 +12,7 @@ Plug 'takac/vim-hardtime'
 Plug 'easymotion/vim-easymotion'
 Plug 'mattn/emmet-vim'
 
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'vim-syntastic/syntastic'

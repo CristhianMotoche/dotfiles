@@ -1,4 +1,6 @@
 [alias]
+  a = add
+  l = log
   d = diff
   co = checkout
   cl = clone

@@ -44,6 +44,9 @@ autocmd BufWritePost * Neomake
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
+call remote#host#RegisterPlugin('python3', '$HOME/.config/nvim/bundle/deoplete.nvim/rplugin/python3/deoplete.py', [
+      \ {'sync': 1, 'name': 'DeopleteInitializePython', 'type': 'command', 'opts': {}},
+     \ ])
 
 " Ag
 let g:ag_working_path_mode="r"
@@ -90,5 +93,6 @@ source ~/.config/nvim/config/syntastic.vim
 source ~/.config/nvim/config/binds.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/config/emmet.vim
+source ~/.config/nvim/config/easymotion.vim
 source ~/.config/nvim/ftplugin/haskell.vim
 augroup autotag
