@@ -17,4 +17,4 @@
   excludesfile = ~/.gitignore
   pager = diff-so-fancy | less
 [push]
-	default = matching
+	default = simple
