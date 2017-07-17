@@ -9,6 +9,7 @@
   cmt = commit
   rct = rebase --continue
   dch = diff --cached
+  pu = ![[ $(git config "branch.$(git symbolic-ref --short HEAD).merge") = '' ]] && git push -u origin $(git symbolic-ref --short HEAD) || git push
 [user]
   name = CristhianMotoche
   email = cristhian.motoche@gmail.com
