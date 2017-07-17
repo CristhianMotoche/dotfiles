@@ -36,6 +36,9 @@ export NVM_DIR="${HOME}/.nvm"
 # CABAL
 export PATH=$PATH:$HOME/.cabal/bin
 
+# HASKELL
+alias ht="hasktags ."
+
 # ANDROID SDK
 export ANDROID_HOME=$HOME/ANDROID/android-sdk-linux
 

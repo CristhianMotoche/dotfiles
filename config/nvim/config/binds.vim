@@ -32,11 +32,11 @@ noremap <leader>s :update<CR>
 vnoremap <leader>s <C-C>:update<CR>
 inoremap <leader>s <C-O>:update<CR><ESC>
 nnoremap <leader>v <C-w>v
+map <leader>f :FZF
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>m :make<CR>
 nmap <leader>q :q<CR>
 nmap <leader><S-q> :q<CR> :Gedit<CR>
-nmap <leader>f <S-v>/{<cr>%
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>d :GitGutterToggle<CR>
 nmap <leader><S-d> :GitGutterDisable<CR>:Gdiff<CR>zR
