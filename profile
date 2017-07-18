@@ -12,6 +12,7 @@ alias tas="tmux attach-session -t"
 alias tds="tmux detach"
 alias tls="tmux ls"
 alias trs="tmux rename-session"
+alias tns="tmux new-session -s"
 
 # PATH
 # Add RVM to PATH for scripting

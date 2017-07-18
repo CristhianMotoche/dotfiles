@@ -16,6 +16,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'vim-syntastic/syntastic'
+Plug 'mhinz/vim-grepper'
 
 Plug 'leafgarland/typescript-vim'
 Plug 'raichoo/purescript-vim'
