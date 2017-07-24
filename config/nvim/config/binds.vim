@@ -50,6 +50,8 @@ map <leader>p :CtrlPTag<CR>
 map gl :BuffergatorMruCyclePrev<CR>
 map gL :BuffergatorMruCycleNext<CR>
 
+map <leader>T :terminal<CR>
+
 " Buffers
 map gb :bp<CR>
 map gB :bn<CR>
