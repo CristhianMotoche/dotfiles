@@ -42,6 +42,9 @@ set nowrap
 " Neomake
 autocmd BufWritePost * Neomake
 
+" Hasktags
+autocmd BufWritePost *.hs silent! !"hasktags ."
+
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 call remote#host#RegisterPlugin('python3', '$HOME/.config/nvim/bundle/deoplete.nvim/rplugin/python3/deoplete.py', [
