@@ -60,3 +60,5 @@ PATH="/usr/local/heroku/bin:$PATH"
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVIM_PYTHON_LOG_FILE=/tmp/nvim-python.log
