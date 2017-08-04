@@ -1,5 +1,7 @@
 tags
 TAGS
+tagdogs
+TAGDOGS
 
 _build/
 global-stack.yaml
@@ -7,4 +9,6 @@ npm-debug.log
 .eslintrc.json
 
 .env
+.env.dev
+.env.test
 .hlint.yaml

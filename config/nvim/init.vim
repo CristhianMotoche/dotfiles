@@ -43,7 +43,7 @@ set nowrap
 autocmd BufWritePost * Neomake
 
 " Hasktags
-autocmd BufWritePost *.hs silent! !"hasktags ."
+autocmd BufWritePost *.hs silent! !hasktags .
 
 " Deoplete
 set runtimepath+=~/.config/nvim/plugins/deoplete.nvim
@@ -77,7 +77,7 @@ let g:psc_ide_log_level = 3
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
-set tags=tags;/,codex.tags;/
+set tags=tags;/,codex.tags;/,tagdogs;/
 
 " Enable hardtime
 let g:hardtime_default_on = 0
