@@ -79,6 +79,11 @@ let g:psc_ide_log_level = 3
 nmap <F8> :TagbarToggle<CR>
 set tags=tags;/,codex.tags;/,tagdogs;/
 
+" FZF
+let g:fzf_buffers_jump = 1
+
+command! -bar Tags call fzf#run({'source':"sed '/^\\!/d;s/\t.*//' " . join(tagfiles()) . ' | uniq', 'sink':'tag'})
+
 " Enable hardtime
 let g:hardtime_default_on = 0
 let g:EasyMotion_smartcase = 1
