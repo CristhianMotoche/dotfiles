@@ -43,6 +43,9 @@ set nowrap
 autocmd BufWritePost * Neomake
 
 " Hasktags
+autocmd BufWritePost *.elm silent! !ctags .
+autocmd BufWritePost *.ts silent! !ctags .
+autocmd BufWritePost *.js silent! !ctags .
 autocmd BufWritePost *.hs silent! !hasktags .
 
 " Deoplete
