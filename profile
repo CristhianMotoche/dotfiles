@@ -34,14 +34,14 @@ alias xampp-mysqldump="sudo /opt/lampp/bin/mysqldump"
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# ANDROID SDK
+export ANDROID_HOME="$HOME/ANDROID/android-sdk-linux"
+
 # CABAL
 export PATH=$PATH:$HOME/.cabal/bin
 
 # HASKELL
 alias ht="hasktags ."
-
-# ANDROID SDK
-export ANDROID_HOME=$HOME/ANDROID/android-sdk-linux
 
 # PURESCRIPT
 export PATH=$PATH:$HOME/.psvm/current/bin
@@ -62,3 +62,8 @@ PATH="/usr/local/heroku/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export NVIM_PYTHON_LOG_FILE=/tmp/nvim-python.log
+
+# Autocomplete
+bindkey '^ ' autosuggest-accept
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"

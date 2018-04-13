@@ -13,3 +13,7 @@ npm-debug.log
 .env.dev
 .env.test
 .hlint.yaml
+.scheme.yml
+.ghci
+
+vault_password_vanderbilt
