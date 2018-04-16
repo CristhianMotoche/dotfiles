@@ -67,3 +67,4 @@ export NVIM_PYTHON_LOG_FILE=/tmp/nvim-python.log
 bindkey '^ ' autosuggest-accept
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"
