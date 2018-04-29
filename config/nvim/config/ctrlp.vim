@@ -1,5 +1,6 @@
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = '.*node_modules.*'
+let g:ctrlp_custom_ignore = '.*external-roles/.*'
 let g:ctrlp_custom_ignore = '\v[\/]\.stack-work$'
 
 if executable('ag')

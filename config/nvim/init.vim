@@ -49,14 +49,14 @@ autocmd BufWritePost *.js silent! !ctags -R .
 autocmd BufWritePost *.hs silent! !hasktags . && mv ctags tags
 
 " Deoplete
-set runtimepath+=~/.config/nvim/plugins/deoplete.nvim
+let g:python_host_prog  = '/usr/bin/python2.7'
+let g:python3_host_prog = '/usr/bin/python3'
+
+set runtimepath+=~/.config/nvim/bundle/deoplete.nvim/
 let g:deoplete#enable_at_startup = 1
 call remote#host#RegisterPlugin('python3', '$HOME/.config/nvim/bundle/deoplete.nvim/rplugin/python3/deoplete.py', [
       \ {'sync': 1, 'name': 'DeopleteInitializePython', 'type': 'command', 'opts': {}},
      \ ])
-
-let g:python_host_prog  = '/usr/bin/python2.7'
-let g:python3_host_prog = '/usr/bin/python3'
 
 " Ag
 let g:ag_working_path_mode="r"
@@ -67,12 +67,11 @@ autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 " Neco
 let g:necoghc_enable_detailed_browse = 1
-let g:deoplete#enable_at_startup = 1
 
 " EMMET
 let g:user_emmet_leader_key='<C-m>'
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,tpl,css EmmetInstall
 
 " PSC ide log level
 let g:psc_ide_syntastic_mode = 1
