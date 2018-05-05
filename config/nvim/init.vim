@@ -43,10 +43,10 @@ set nowrap
 autocmd BufWritePost * Neomake
 
 " Hasktags
-autocmd BufWritePost *.elm silent! !ctags .
-autocmd BufWritePost *.ts silent! !ctags .
-autocmd BufWritePost *.js silent! !ctags .
-autocmd BufWritePost *.hs silent! !hasktags .
+autocmd BufWritePost *.elm silent! !ctags -R .
+autocmd BufWritePost *.ts silent! !ctags -R .
+autocmd BufWritePost *.js silent! !ctags -R .
+autocmd BufWritePost *.hs silent! !hasktags . && mv ctags tags
 
 " Deoplete
 let g:python_host_prog  = '/usr/bin/python2.7'
