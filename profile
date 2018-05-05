@@ -68,3 +68,10 @@ bindkey '^ ' autosuggest-accept
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"
+export JAVA_HOME=/home/cmotoche/Downloads/jdk-8u161-linux-x64/jdk1.8.0_161/
+
+# EDITOR
+export EDITOR=/usr/bin/nvim
+
+# TMUXINATOR
+
