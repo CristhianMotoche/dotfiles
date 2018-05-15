@@ -63,6 +63,9 @@ map <leader>z :NeoSnippetEdit<CR>
 map <leader>t :tabnew<CR>
 map <leader>p :Tags<CR>
 map <leader>S :SyntasticToggleMode<CR>
+map <leader>rl :w<Bar>execute 'silent !tmux send-keys -t bottom :r ENTER'<CR>
+map <leader>rm :w<Bar>execute 'silent !tmux send-keys -t bottom :main ENTER'<CR>
+
 map gl :BuffergatorMruCyclePrev<CR>
 map gL :BuffergatorMruCycleNext<CR>
 

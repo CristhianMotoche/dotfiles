@@ -40,7 +40,10 @@ set autoread
 set nowrap
 
 " Neomake
-autocmd BufWritePost * Neomake
+"autocmd BufWritePost * Neomake
+
+" ALE
+let g:ale_linters = {'haskell': ['hlint']}
 
 " Hasktags
 autocmd BufWritePost *.elm silent! !ctags -R .
