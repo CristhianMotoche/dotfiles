@@ -111,5 +111,6 @@ source ~/.config/nvim/config/binds.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/config/emmet.vim
 source ~/.config/nvim/config/easymotion.vim
+"source ~/.config/nvim/config/intero.vim
 source ~/.config/nvim/ftplugin/haskell.vim
 augroup autotag
