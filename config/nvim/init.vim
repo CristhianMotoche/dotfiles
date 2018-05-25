@@ -2,7 +2,7 @@
 set colorcolumn=80 " display vertical line at 80 chars
 
 " Cursor line
-set cursorline " show cursor position
+set cursorline
 
 " Replace tabs whit spaces
 set expandtab " replace tabs with spaces
@@ -11,7 +11,8 @@ set expandtab " replace tabs with spaces
 set t_Co=256
 
 " Colorschema
-colorscheme ron
+colorscheme perun
+set termguicolors
 
 " Clipboard
 " set clipboard+=unnamedplus
@@ -102,8 +103,6 @@ call g:plug#begin('~/.config/nvim/bundle')
 call g:plug#end()
 
 " Extras
-source ~/.config/nvim/pluggins/autoclose.vim
-source ~/.config/nvim/pluggins/haskell.vim
 source ~/.config/nvim/config/ctrlp.vim
 source ~/.config/nvim/config/snippet.vim
 source ~/.config/nvim/config/syntastic.vim
@@ -111,6 +110,4 @@ source ~/.config/nvim/config/binds.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/config/emmet.vim
 source ~/.config/nvim/config/easymotion.vim
-"source ~/.config/nvim/config/intero.vim
-source ~/.config/nvim/ftplugin/haskell.vim
 augroup autotag

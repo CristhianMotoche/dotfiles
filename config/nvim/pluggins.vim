@@ -20,6 +20,7 @@ Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'mhinz/vim-grepper'
 
+Plug 'aradunovic/perun.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'raichoo/purescript-vim'
 Plug 'lambdatoast/elm.vim'
