@@ -47,8 +47,8 @@ alias ht="hasktags ."
 export PATH=$PATH:$HOME/.psvm/current/bin
 
 # SCALA
-export PATH=$PATH:$HOME/.scala/scala-2.11.8/bin
-export ACTIVATOR_HOME="${HOME}/.scala/activator-1.3.10/activator-dist-1.3.10/bin/"
+export PATH=$PATH:$HOME/.scala/current/bin
+export ACTIVATOR_HOME="${HOME}/.scala/current-activator/bin/"
 export PATH=$PATH:$ACTIVATOR_HOME
 
 # PROMPT_COMMAND
@@ -61,17 +61,19 @@ PATH="/usr/local/heroku/bin:$PATH"
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# NVIM
 export NVIM_PYTHON_LOG_FILE=/tmp/nvim-python.log
 
 # Autocomplete
 bindkey '^ ' autosuggest-accept
+
+# Python
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"
+
+# Java
 export JAVA_HOME=/home/cmotoche/Downloads/jdk-8u161-linux-x64/jdk1.8.0_161/
 
 # EDITOR
 export EDITOR=/usr/bin/nvim
-
-# TMUXINATOR
-
