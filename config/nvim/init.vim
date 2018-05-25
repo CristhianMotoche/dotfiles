@@ -39,6 +39,8 @@ set nowrap
 
 " ALE
 let g:ale_linters = {'haskell': ['hlint', 'hdevtools']}
+let g:ale_list_window_size = 5
+autocmd FileType qf setlocal wrap
 
 " Hasktags
 autocmd BufWritePost *.elm silent! !ctags -R .
@@ -59,13 +61,6 @@ call remote#host#RegisterPlugin('python3', '$HOME/.config/nvim/bundle/deoplete.n
 " Ag
 let g:ag_working_path_mode="r"
 
-" Disable haskell-vim omnifunc
-let g:haskellmode_completion_ghc = 0
-autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
-
-" Neco
-let g:necoghc_enable_detailed_browse = 1
-
 " EMMET
 let g:user_emmet_leader_key='<C-m>'
 let g:user_emmet_install_global = 0
@@ -75,8 +70,7 @@ autocmd FileType html,tpl,css EmmetInstall
 let g:psc_ide_syntastic_mode = 1
 let g:psc_ide_log_level = 3
 
-" Tagbar
-nmap <F8> :TagbarToggle<CR>
+" Tags
 set tags=tags;/,codex.tags;/,tagdogs;/
 
 " FZF
@@ -99,7 +93,6 @@ call g:plug#end()
 " Extras
 source ~/.config/nvim/config/ctrlp.vim
 source ~/.config/nvim/config/snippet.vim
-source ~/.config/nvim/config/syntastic.vim
 source ~/.config/nvim/config/binds.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/config/emmet.vim

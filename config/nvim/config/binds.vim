@@ -39,6 +39,7 @@ nmap K <Plug>(easymotion-overwin-f2)
 let mapleader = ","
 map + <leader><leader>w
 map <leader>+ <leader><leader>b
+map <leader>a :ALEDetail<CR>
 map <leader>j :wincmd j<CR>
 map <leader>k :wincmd k<CR>
 nmap <leader>h :wincmd h<CR>

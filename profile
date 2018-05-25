@@ -40,6 +40,9 @@ export ANDROID_HOME="$HOME/ANDROID/android-sdk-linux"
 # CABAL
 export PATH=$PATH:$HOME/.cabal/bin
 
+# Stack
+export PATH=$(stack path --bin-path)
+
 # HASKELL
 alias ht="hasktags ."
 
