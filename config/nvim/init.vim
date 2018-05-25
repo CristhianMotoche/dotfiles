@@ -14,9 +14,6 @@ set t_Co=256
 colorscheme perun
 set termguicolors
 
-" Clipboard
-" set clipboard+=unnamedplus
-
 " Set noswap
 set noswapfile
 
@@ -40,11 +37,8 @@ set autoread
 " Set linebreak
 set nowrap
 
-" Neomake
-"autocmd BufWritePost * Neomake
-
 " ALE
-let g:ale_linters = {'haskell': ['hlint']}
+let g:ale_linters = {'haskell': ['hlint', 'hdevtools']}
 
 " Hasktags
 autocmd BufWritePost *.elm silent! !ctags -R .
