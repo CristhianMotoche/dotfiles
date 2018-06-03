@@ -1,9 +1,9 @@
 tags
 TAGS
-agdogs
-TGDOGS
+tagdogs
+TAGDOGS
 
-_bild/
+_build/
 global-stack.yaml
 npm-debug.log
 .eslintrc.json
