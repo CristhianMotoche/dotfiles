@@ -36,6 +36,7 @@ export NVM_DIR="${HOME}/.nvm"
 
 # ANDROID SDK
 export ANDROID_HOME="$HOME/ANDROID/android-sdk-linux"
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # CABAL
 export PATH=$PATH:$HOME/.cabal/bin
@@ -59,7 +60,7 @@ export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:
 precmd() { eval "$PROMPT_COMMAND" }
 
 # HEROKU
-PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/heroku/bin:$PATH"
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
