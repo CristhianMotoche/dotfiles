@@ -7,6 +7,9 @@ set cursorline
 " Replace tabs whit spaces
 set expandtab " replace tabs with spaces
 
+" Set mouse = a
+set mouse=a
+
 " Set color
 set t_Co=256
 
