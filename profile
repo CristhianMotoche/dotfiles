@@ -68,13 +68,11 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # NVIM
 export NVIM_PYTHON_LOG_FILE=/tmp/nvim-python.log
 
-# Autocomplete
-bindkey '^ ' autosuggest-accept
-
 # Python
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"
+export PATH="$HOME/.asdf/installs/python/3.6.0/bin/:$PATH"
 
 # Java
 export JAVA_HOME=/home/cmotoche/Downloads/jdk-8u161-linux-x64/jdk1.8.0_161/
