@@ -49,6 +49,7 @@ autocmd FileType qf setlocal wrap
 autocmd BufWritePost *.elm silent! !ctags -R .
 autocmd BufWritePost *.ts silent! !ctags -R .
 autocmd BufWritePost *.js silent! !ctags -R .
+autocmd BufWritePost *.py silent! !ctags -R .
 autocmd BufWritePost *.hs silent! !hasktags . && mv ctags tags
 
 " Deoplete

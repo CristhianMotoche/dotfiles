@@ -55,3 +55,9 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 source ~/.profile
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
+
+bindkey '^ ' autosuggest-accept
