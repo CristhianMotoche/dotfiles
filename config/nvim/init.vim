@@ -14,7 +14,7 @@ set mouse=a
 set t_Co=256
 
 " Colorschema
-colorscheme perun
+colorscheme morning
 set termguicolors
 
 " Set noswap
@@ -41,7 +41,7 @@ set autoread
 set nowrap
 
 " ALE
-let g:ale_linters = {'haskell': ['hlint', 'hdevtools']}
+let g:ale_linters = {'haskell': ['hlint', 'hdevtools'], 'python': ['flake8', 'pylint']}
 let g:ale_list_window_size = 5
 autocmd FileType qf setlocal wrap
 
@@ -64,6 +64,9 @@ call remote#host#RegisterPlugin('python3', '$HOME/.config/nvim/bundle/deoplete.n
 
 " Ag
 let g:ag_working_path_mode="r"
+
+" EditorConfig
+let g:editorconfig_verbose = 1
 
 " EMMET
 let g:user_emmet_leader_key='<C-m>'
