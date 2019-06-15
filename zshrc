@@ -56,8 +56,6 @@ export LANG=en_US.UTF-8
 
 source ~/.profile
 
-. $HOME/.asdf/asdf.sh
-
-. $HOME/.asdf/completions/asdf.bash
-
 bindkey '^ ' autosuggest-accept
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -1,3 +1,13 @@
+" Deoplete
+let g:python_host_prog  = expand('$HOME') . '/.nix-profile/bin/python2.7'
+let g:python3_host_prog = expand('$HOME') . '/.nix-profile/bin/python3.7'
+
+set runtimepath+=~/.config/nvim/bundle/deoplete.nvim/
+let g:deoplete#enable_at_startup = 1
+call remote#host#RegisterPlugin('python3', expand('$HOME') . '/.config/nvim/bundle/deoplete.nvim/rplugin/python3/deoplete.py', [
+      \ {'sync': 1, 'name': 'DeopleteInitializePython', 'type': 'command', 'opts': {}},
+     \ ])
+
 " Horizontal bar
 set colorcolumn=80 " display vertical line at 80 chars
 
@@ -51,16 +61,6 @@ autocmd BufWritePost *.ts silent! !ctags -R .
 autocmd BufWritePost *.js silent! !ctags -R .
 autocmd BufWritePost *.py silent! !ctags -R .
 autocmd BufWritePost *.hs silent! !hasktags . && mv ctags tags
-
-" Deoplete
-let g:python_host_prog  = '/usr/bin/python2.7'
-let g:python3_host_prog = '/usr/bin/python3'
-
-set runtimepath+=~/.config/nvim/bundle/deoplete.nvim/
-let g:deoplete#enable_at_startup = 1
-call remote#host#RegisterPlugin('python3', '$HOME/.config/nvim/bundle/deoplete.nvim/rplugin/python3/deoplete.py', [
-      \ {'sync': 1, 'name': 'DeopleteInitializePython', 'type': 'command', 'opts': {}},
-     \ ])
 
 " Ag
 let g:ag_working_path_mode="r"
