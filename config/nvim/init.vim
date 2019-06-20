@@ -22,10 +22,7 @@ set mouse=a
 
 " Set color
 set t_Co=256
-
-" Colorschema
-colorscheme morning
-set termguicolors
+set guicursor=
 
 " Set noswap
 set noswapfile
@@ -35,8 +32,11 @@ set rnu
 set number
 
 " Set syntax on
-syntax on
+syntax enable
 filetype plugin indent on
+
+" Colorschema
+colorscheme morning
 
 " size of a hard tabstop
 set tabstop=2
