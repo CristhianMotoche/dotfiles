@@ -18,6 +18,7 @@ Plug 'typeintandem/nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'sgur/vim-editorconfig'
+Plug 'majutsushi/tagbar'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet'
