@@ -1,5 +1,1 @@
-# set an ad-hoc GUI timer
-N=$1; shift
-
-(sleep $N && zenity --info --title="Time's Up" --text="${*:-BING}" done) &
-echo "timer set for $N"
+/home/cmotoche/Documents/Repos/dotfiles/my_bin/timer

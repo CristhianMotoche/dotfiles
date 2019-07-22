@@ -1,3 +1,1 @@
-timers=$(ps -o start -o command $(pgrep -f my_bin/timer))
-
-zenity --info --title="Timers:" --text="${timers:Nothing}" --width=400
+/home/cmotoche/Documents/Repos/dotfiles/my_bin/ltimer
