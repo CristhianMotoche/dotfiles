@@ -31,3 +31,6 @@ precmd() {
 
 # EDITOR
 export EDITOR=/usr/bin/nvim
+
+# GHC
+export PATH=~/.stack/programs/x86_64-linux/ghc-8.0.2/bin/:$PATH

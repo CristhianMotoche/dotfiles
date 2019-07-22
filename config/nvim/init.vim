@@ -1,3 +1,6 @@
+let g:python_host_prog = expand($ASDF_DATA_DIR . '/installs/python/2.7.15/bin/python')
+let g:python3_host_prog = expand($ASDF_DATA_DIR . '/installs/python/3.7.2/bin/python')
+
 " Horizontal bar
 set colorcolumn=80 " display vertical line at 80 chars
 
@@ -41,7 +44,7 @@ set autoread
 set nowrap
 
 " ALE
-let g:ale_linters = {'haskell': ['hlint', 'hdevtools'], 'python': ['flake8', 'pylint']}
+let g:ale_linters = {'haskell': ['hlint', 'hdevtools'], 'python': ['mypy', 'flake8']}
 let g:ale_list_window_size = 5
 autocmd FileType qf setlocal wrap
 
@@ -49,12 +52,10 @@ autocmd FileType qf setlocal wrap
 autocmd BufWritePost *.elm silent! !ctags -R .
 autocmd BufWritePost *.ts silent! !ctags -R .
 autocmd BufWritePost *.js silent! !ctags -R .
+autocmd BufWritePost *.py silent! !ctags -R .
 autocmd BufWritePost *.hs silent! !hasktags . && mv ctags tags
 
 " Deoplete
-let g:python_host_prog  = '/usr/bin/python2.7'
-let g:python3_host_prog = '/usr/bin/python3'
-
 set runtimepath+=~/.config/nvim/bundle/deoplete.nvim/
 let g:deoplete#enable_at_startup = 1
 call remote#host#RegisterPlugin('python3', '$HOME/.config/nvim/bundle/deoplete.nvim/rplugin/python3/deoplete.py', [
@@ -65,7 +66,10 @@ call remote#host#RegisterPlugin('python3', '$HOME/.config/nvim/bundle/deoplete.n
 let g:ag_working_path_mode="r"
 
 " EditorConfig
-let g:editorconfig_verbose = 1
+let g:editorconfig_verbose=1
+
+" NERDTree
+let g:NERDTreeShowLineNumbers=1
 
 " EMMET
 let g:user_emmet_leader_key='<C-m>'

@@ -18,6 +18,7 @@ Plug 'typeintandem/nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'sgur/vim-editorconfig'
+Plug 'vim-scripts/greplace.vim'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet'
@@ -35,3 +36,4 @@ Plug 'keith/swift.vim'
 Plug 'manasthakur/vim-commentor'
 Plug 'ElmCast/elm-vim'
 Plug 'mxw/vim-jsx'
+Plug 'nbouscal/vim-stylish-haskell'
