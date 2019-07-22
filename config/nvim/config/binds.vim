@@ -56,6 +56,7 @@ nmap <leader><S-q> :q<CR> :Gedit<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>d :GitGutterToggle<CR>
 nmap <leader><S-d> :GitGutterDisable<CR>:Gdiff<CR>zR
+nmap <F8> :TagbarToggle<CR>
 map <Leader>c ggVG"*y
 map <Leader>e :e <C-R>=expand("%:p:h") . '/'<CR>
 map <Leader>v :vnew <C-R>=expand("%:p:h") . '/'<CR>

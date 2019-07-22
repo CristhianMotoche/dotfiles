@@ -1,0 +1,10 @@
+templates:
+  params:
+    author-name: CristhianMotoche
+    author-email: cristhian.motoche@gmail.com
+    copyright: WTFPL
+    github-username: CristhianMotoche
+
+nix:
+  enable: true
+  packages: [zlib.dev, zlib.out]

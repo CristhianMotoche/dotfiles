@@ -1,6 +1,16 @@
 let g:python_host_prog = expand($ASDF_DATA_DIR . '/installs/python/2.7.15/bin/python')
 let g:python3_host_prog = expand($ASDF_DATA_DIR . '/installs/python/3.7.2/bin/python')
 
+" Deoplete
+let g:python_host_prog  = expand('$HOME') . '/.nix-profile/bin/python2.7'
+let g:python3_host_prog = expand('$HOME') . '/.nix-profile/bin/python3.7'
+
+set runtimepath+=~/.config/nvim/bundle/deoplete.nvim/
+let g:deoplete#enable_at_startup = 1
+call remote#host#RegisterPlugin('python3', expand('$HOME') . '/.config/nvim/bundle/deoplete.nvim/rplugin/python3/deoplete.py', [
+      \ {'sync': 1, 'name': 'DeopleteInitializePython', 'type': 'command', 'opts': {}},
+     \ ])
+
 " Horizontal bar
 set colorcolumn=80 " display vertical line at 80 chars
 
@@ -15,10 +25,7 @@ set mouse=a
 
 " Set color
 set t_Co=256
-
-" Colorschema
-colorscheme morning
-set termguicolors
+set guicursor=
 
 " Set noswap
 set noswapfile
@@ -28,8 +35,11 @@ set rnu
 set number
 
 " Set syntax on
-syntax on
+syntax enable
 filetype plugin indent on
+
+" Colorschema
+colorscheme morning
 
 " size of a hard tabstop
 set tabstop=2
@@ -55,12 +65,61 @@ autocmd BufWritePost *.js silent! !ctags -R .
 autocmd BufWritePost *.py silent! !ctags -R .
 autocmd BufWritePost *.hs silent! !hasktags . && mv ctags tags
 
-" Deoplete
-set runtimepath+=~/.config/nvim/bundle/deoplete.nvim/
-let g:deoplete#enable_at_startup = 1
-call remote#host#RegisterPlugin('python3', '$HOME/.config/nvim/bundle/deoplete.nvim/rplugin/python3/deoplete.py', [
-      \ {'sync': 1, 'name': 'DeopleteInitializePython', 'type': 'command', 'opts': {}},
-     \ ])
+let g:tagbar_type_haskell = {
+      \ 'ctagsbin'  : 'hasktags',
+      \ 'ctagsargs' : '-x -c -o-',
+      \ 'kinds'     : [
+      \  'm:modules:0:1',
+      \  'd:data: 0:1',
+      \  'd_gadt: data gadt:0:1',
+      \  't:type names:0:1',
+      \  'nt:new types:0:1',
+      \  'c:classes:0:1',
+      \  'cons:constructors:1:1',
+      \  'c_gadt:constructor gadt:1:1',
+      \  'c_a:constructor accessors:1:1',
+      \  'ft:function types:1:1',
+      \  'fi:function implementations:0:1',
+      \  'o:others:0:1'
+      \ ],
+      \ 'sro'        : '.',
+      \ 'kind2scope' : {
+      \ 'm' : 'module',
+      \ 'c' : 'class',
+      \ 'd' : 'data',
+      \ 't' : 'type'
+      \ },
+      \ 'scope2kind' : {
+      \ 'module' : 'm',
+      \ 'class'  : 'c',
+      \ 'data'   : 'd',
+      \ 'type'   : 't'
+      \ }
+      \ }
+
+" Cyclic tag navigation {{{
+let g:rt_cw = ''
+function! RT()
+  let cw = expand('<cword>')
+  try
+    if cw != g:rt_cw
+      execute 'tag ' . cw
+      call search(cw,'c',line('.'))
+    else
+      try
+        execute 'tnext'
+      catch /.*/
+        execute 'trewind'
+      endtry
+      call search(cw,'c',line('.'))
+    endif
+    let g:rt_cw = cw
+  catch /.*/
+    echo "no tags on " . cw
+  endtry
+endfunction
+map <C-]> :call RT()<CR>
+" }}}
 
 " Ag
 let g:ag_working_path_mode="r"

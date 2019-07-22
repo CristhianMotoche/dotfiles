@@ -63,3 +63,5 @@ source ~/.profile
 . $HOME/.asdf/completions/asdf.bash
 
 bindkey '^ ' autosuggest-accept
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
