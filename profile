@@ -19,3 +19,9 @@ export PATH=~/.stack/programs/x86_64-linux/ghc-8.0.2/bin/:$PATH
 
 # EDITOR
 export EDITOR=$(which nvim)
+
+# Mac
+export ASDF_DIR=$(brew --prefix asdf)
+export ASDF_DATA_DIR=~/.asdf
+
+. /usr/local/opt/asdf/asdf.sh

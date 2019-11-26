@@ -1,9 +1,9 @@
-let g:python_host_prog = expand($ASDF_DATA_DIR . '/installs/python/2.7.15/bin/python')
-let g:python3_host_prog = expand($ASDF_DATA_DIR . '/installs/python/3.7.2/bin/python')
+let g:python_host_prog = expand($ASDF_DATA_DIR . '/installs/python/2.7.17/bin/python')
+let g:python3_host_prog = expand($ASDF_DATA_DIR . '/installs/python/3.7.5/bin/python')
 
 " Deoplete
-let g:python_host_prog  = expand('$HOME') . '/.nix-profile/bin/python2.7'
-let g:python3_host_prog = expand('$HOME') . '/.nix-profile/bin/python3.7'
+"let g:python_host_prog  = expand('$HOME') . '/.nix-profile/bin/python2.7'
+"let g:python3_host_prog = expand('$HOME') . '/.nix-profile/bin/python3.7'
 
 set runtimepath+=~/.config/nvim/bundle/deoplete.nvim/
 let g:deoplete#enable_at_startup = 1

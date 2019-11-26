@@ -10,7 +10,6 @@ plugin/
 rplugin/
 CONTRIBUTING.md
 Makefile
-README.md
 run_tests.sh
 
 # Vim
