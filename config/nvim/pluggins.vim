@@ -34,6 +34,5 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'keith/swift.vim'
 Plug 'manasthakur/vim-commentor'
-Plug 'ElmCast/elm-vim'
 Plug 'mxw/vim-jsx'
 Plug 'nbouscal/vim-stylish-haskell'

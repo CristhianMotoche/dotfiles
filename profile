@@ -9,10 +9,16 @@ alias tds="tmux detach"
 alias tls="tmux ls"
 alias trs="tmux rename-session"
 alias tns="tmux new-session -s"
+if uname -s | grep -q 'Darwin' ; then
+  alias ctags="`brew --prefix`/bin/ctags"
+  alias ctags >> ~/.bashrc
+fi
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Local bins
+export PATH=~/.local/bin/:$PATH
 
 # GHC
 export PATH=~/.stack/programs/x86_64-linux/ghc-8.0.2/bin/:$PATH

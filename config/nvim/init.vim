@@ -39,7 +39,7 @@ syntax enable
 filetype plugin indent on
 
 " Colorschema
-colorscheme morning
+colorscheme zellner
 
 " size of a hard tabstop
 set tabstop=2
