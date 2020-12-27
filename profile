@@ -9,16 +9,9 @@ alias tds="tmux detach"
 alias tls="tmux ls"
 alias trs="tmux rename-session"
 alias tns="tmux new-session -s"
-if uname -s | grep -q 'Darwin' ; then
-  alias ctags="`brew --prefix`/bin/ctags"
-  alias ctags >> ~/.bashrc
-fi
-
-# FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Local bins
-export PATH=~/.local/bin/:$PATH
+export PATH=~/.local/bin/:~/.bin:$PATH
 
 # GHC
 export PATH=~/.stack/programs/x86_64-linux/ghc-8.0.2/bin/:$PATH
@@ -27,7 +20,21 @@ export PATH=~/.stack/programs/x86_64-linux/ghc-8.0.2/bin/:$PATH
 export EDITOR=$(which nvim)
 
 # Mac
-export ASDF_DIR=$(brew --prefix asdf)
+if uname -s | grep -q 'Darwin' ; then
+  alias ctags="`brew --prefix`/bin/ctags"
+  alias ctags >> ~/.bashrc
+  export ASDF_DIR=$(brew --prefix asdf)
+fi
+
+# ASDF
 export ASDF_DATA_DIR=~/.asdf
 
-. /usr/local/opt/asdf/asdf.sh
+. $ASDF_DATA_DIR/asdf.sh
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+# Open SSL
+export PATH=$HOME/openssl/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/openssl/lib
+export LC_ALL="en_US.UTF-8"
+export LDFLAGS="-L/home/camm/openssl/lib -Wl,-rpath,/home/camm/openssl/lib"

@@ -1,7 +1,6 @@
+" Deoplete
 let g:python_host_prog = expand($ASDF_DATA_DIR . '/installs/python/2.7.17/bin/python')
 let g:python3_host_prog = expand($ASDF_DATA_DIR . '/installs/python/3.7.5/bin/python')
-
-" Deoplete
 "let g:python_host_prog  = expand('$HOME') . '/.nix-profile/bin/python2.7'
 "let g:python3_host_prog = expand('$HOME') . '/.nix-profile/bin/python3.7'
 
@@ -13,6 +12,10 @@ call remote#host#RegisterPlugin('python3', expand('$HOME') . '/.config/nvim/bund
 
 " Horizontal bar
 set colorcolumn=80 " display vertical line at 80 chars
+
+" Per project configuration
+set exrc
+set secure
 
 " Cursor line
 set cursorline
@@ -39,7 +42,7 @@ syntax enable
 filetype plugin indent on
 
 " Colorschema
-colorscheme zellner
+colorscheme torte
 
 " size of a hard tabstop
 set tabstop=2

@@ -19,6 +19,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'sgur/vim-editorconfig'
 Plug 'majutsushi/tagbar'
+Plug 'manicmaniac/coconut.vim'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet'
@@ -35,4 +36,3 @@ Plug 'junegunn/fzf.vim'
 Plug 'keith/swift.vim'
 Plug 'manasthakur/vim-commentor'
 Plug 'mxw/vim-jsx'
-Plug 'nbouscal/vim-stylish-haskell'

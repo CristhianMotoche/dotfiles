@@ -6,5 +6,5 @@ templates:
     github-username: CristhianMotoche
 
 nix:
-  enable: true
+  enable: false
   packages: [zlib.dev, zlib.out]

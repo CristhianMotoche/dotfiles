@@ -18,3 +18,5 @@ npm-debug.log
 .ghci
 
 vault_password
+
+.nvimrc
