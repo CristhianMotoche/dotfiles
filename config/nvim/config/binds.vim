@@ -30,11 +30,9 @@ endfunction
 command! ZoomToggle call s:ZoomToggle()
 nnoremap <silent> <C-A> :ZoomToggle<CR>
 
-" Easymotion
-nmap H <Plug>(easymotion-b)
-nmap L <Plug>(easymotion-w)
-nmap J <Plug>(easymotion-overwin-line)
-nmap K <Plug>(easymotion-overwin-f2)
+" Hop
+nmap L :HopWord<CR>
+nmap J :HopLine<CR>
 
 let mapleader = ","
 map + <leader><leader>w
@@ -64,12 +62,8 @@ map <leader>r :source ~/.config/nvim/init.vim<CR>:set wrap!<CR>
 map <leader>z :NeoSnippetEdit<CR>
 map <leader>t :tabnew<CR>
 map <leader>p :Tags<CR>
-map <leader>S :SyntasticToggleMode<CR>
 map <leader>rl :w<Bar>execute 'silent !tmux send-keys -t bottom :r ENTER'<CR>
 map <leader>rm :w<Bar>execute 'silent !tmux send-keys -t bottom :main ENTER'<CR>
-
-map gl :BuffergatorMruCyclePrev<CR>
-map gL :BuffergatorMruCycleNext<CR>
 
 map <leader>T :terminal<CR>
 
@@ -78,18 +72,3 @@ map gb :bp<CR>
 map gB :bn<CR>
 map <Leader>b :buffers<CR>
 map <Leader>B :Buffers<CR>
-
-" Remove OIDS of mongo fixtures
-map <leader>o :%s/{\s"\$oid"\s:\s\(".\{24\}"\)\s}/id(\1)/g<CR>
-
-" Inject function done in jasmine it, beforeEach o afterEach
-map <leader>d ?it\\|beforeEach\\|afterEach<cr>f)idone<esc>:w<cr>/<up><up><cr><C-o>
-
-" Deactive highlight in the last search with ENTER
-nnoremap <CR> :noh<CR><CR>
-
-" For local replace
-nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
-
-" For global replace
-nnoremap gR gD:%s/<C-R>///gc<left><left><left>

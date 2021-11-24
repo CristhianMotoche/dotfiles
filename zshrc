@@ -48,8 +48,6 @@ export UPDATE_ZSH_DAYS=15
 plugins=(git stack zsh-autosuggestions)
 
 # User configuration
-export PATH=$PATH:"/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:${HOME}/.rvm/bin:${HOME}/.local/bin:${HOME}.my_bin:${HOME}/.my_bin/PHP:${HOME}/.composer/vendor/bin"
-
 source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8

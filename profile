@@ -13,9 +13,6 @@ alias tns="tmux new-session -s"
 # Local bins
 export PATH=~/.local/bin/:~/.bin:$PATH
 
-# GHC
-export PATH=~/.stack/programs/x86_64-linux/ghc-8.0.2/bin/:$PATH
-
 # EDITOR
 export EDITOR=$(which nvim)
 
@@ -26,15 +23,7 @@ if uname -s | grep -q 'Darwin' ; then
   export ASDF_DIR=$(brew --prefix asdf)
 fi
 
-# ASDF
-export ASDF_DATA_DIR=~/.asdf
-
-. $ASDF_DATA_DIR/asdf.sh
-
-export PATH="$HOME/.poetry/bin:$PATH"
-
 # Open SSL
 export PATH=$HOME/openssl/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/openssl/lib
 export LC_ALL="en_US.UTF-8"
-export LDFLAGS="-L/home/camm/openssl/lib -Wl,-rpath,/home/camm/openssl/lib"
