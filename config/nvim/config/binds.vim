@@ -30,6 +30,12 @@ endfunction
 command! ZoomToggle call s:ZoomToggle()
 nnoremap <silent> <C-A> :ZoomToggle<CR>
 
+" Quickfix
+nmap cn :cn<CR>
+nmap cN :cp<CR>
+nmap cx :cclose<CR>
+nmap co :copen<CR>
+
 " Hop
 nmap L :HopWord<CR>
 nmap J :HopLine<CR>
@@ -46,8 +52,8 @@ noremap <leader>s :update<CR>
 vnoremap <leader>s <C-C>:update<CR>
 inoremap <leader>s <C-O>:update<CR><ESC>
 nnoremap <leader>v <C-w>v
-map <leader>f :FZF
 nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>o :NERDTreeFind<CR>
 nmap <leader>m :make<CR>
 nmap <leader>q :q<CR>
 nmap <leader><S-q> :q<CR> :Gedit<CR>

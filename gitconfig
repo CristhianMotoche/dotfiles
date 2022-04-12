@@ -3,6 +3,7 @@
   l = log
   d = diff
   co = checkout
+  cp = cherry-pick
   cl = clone
   st = status
   br = branch
