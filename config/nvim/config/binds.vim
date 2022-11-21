@@ -43,7 +43,6 @@ nmap J :HopLine<CR>
 let mapleader = ","
 map + <leader><leader>w
 map <leader>+ <leader><leader>b
-map <leader>a :ALEDetail<CR>
 map <leader>j :wincmd j<CR>
 map <leader>k :wincmd k<CR>
 nmap <leader>h :wincmd h<CR>
@@ -78,3 +77,13 @@ map gb :bp<CR>
 map gB :bn<CR>
 map <Leader>b :buffers<CR>
 map <Leader>B :Buffers<CR>
+
+" Turbo log
+function! s:console_log() abort
+  let l:word = expand('<cword>')
+  execute 'norm!oconsole.log(''CL - '.l:word.''', '.l:word.');'
+  silent! call repeat#set("\<Plug>(JsConsoleLog)")
+endfunction
+
+nnoremap <silent>(JsConsoleLog) :<C-u>call <sid>console_log()<CR>
+nmap <Leader>cl (JsConsoleLog)

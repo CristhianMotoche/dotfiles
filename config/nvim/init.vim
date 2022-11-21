@@ -11,7 +11,6 @@ call g:plug#end()
 source ~/.config/nvim/config/basic.vim
 source ~/.config/nvim/config/ctrlp.vim
 source ~/.config/nvim/config/binds.vim
-"source ~/.config/nvim/config/lsp.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/config/coc.vim
 
