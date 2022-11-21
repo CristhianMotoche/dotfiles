@@ -21,3 +21,4 @@ vault_password
 
 .nvimrc
 hie.yaml
+.tool-versions

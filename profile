@@ -20,10 +20,15 @@ export EDITOR=$(which nvim)
 if uname -s | grep -q 'Darwin' ; then
   alias ctags="`brew --prefix`/bin/ctags"
   alias ctags >> ~/.bashrc
-  export ASDF_DIR=$(brew --prefix asdf)
+  export ASDF_DIR=$HOME/.asdf
 fi
 
 # Open SSL
 export PATH=$HOME/openssl/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/openssl/lib
 export LC_ALL="en_US.UTF-8"
+export JAVA_HOME=~/.asdf/installs/java/openjdk-18/
+export ANDROID_HOME=~/Library/Android/sdk/
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export PATH="/Users/cmotoche/Library/Application Support/edgedb/bin:$PATH"

@@ -1,5 +1,3 @@
-# Path to your oh-my-zsh installation.
-  export ZSH="${HOME}/.oh-my-zsh"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -56,8 +54,4 @@ source ~/.profile
 
 . $HOME/.asdf/asdf.sh
 
-. $HOME/.asdf/completions/asdf.bash
-
 bindkey '^ ' autosuggest-accept
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
