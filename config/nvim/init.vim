@@ -11,13 +11,12 @@ call g:plug#end()
 source ~/.config/nvim/config/basic.vim
 source ~/.config/nvim/config/ctrlp.vim
 source ~/.config/nvim/config/binds.vim
-"source ~/.config/nvim/config/lsp.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/config/coc.vim
 
 
 
-let g:coc_node_path = expand($ASDF_DATA_DIR . '/installs/nodejs/16.1.0/bin/node')
+let g:coc_node_path = expand($ASDF_DATA_DIR . '/installs/nodejs/16.13.1/bin/node')
 let g:ale_disable_lsp = 1
 let g:ale_linters_ignore = {
 \  "haskell": ["ghc_mod", "hie", "ghc", "cabal_ghc", "hdevtools"]

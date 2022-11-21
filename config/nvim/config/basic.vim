@@ -8,7 +8,6 @@ set noswapfile
 set rnu
 set number
 syntax enable
-"filetype plugin indent on
 set shiftwidth=2
 set autoread
 set nowrap
