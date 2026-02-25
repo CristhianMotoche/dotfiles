@@ -14,9 +14,7 @@ source ~/.config/nvim/config/binds.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/config/coc.vim
 
-
-
-let g:coc_node_path = expand($ASDF_DIR . '/installs/nodejs/16.13.0/bin/node')
+let g:coc_node_path = '~/.asdf/installs/nodejs/18.9.1/bin/node'
 let g:ale_disable_lsp = 1
 let g:ale_linters_ignore = {
 \  "haskell": ["ghc_mod", "hie", "ghc", "cabal_ghc", "hdevtools"]
@@ -28,7 +26,7 @@ let g:ale_fixers = {
 \   'haskell': ['stylish-haskell'],
 \}
 
-nmap <C-q> <cmd>Telescope live_grep<cr>
+nmap <leader>g <cmd>Telescope live_grep<cr>
 nnoremap <leader>b <cmd>Telescope buffers<cr>
 
 lua<<EOF
@@ -54,4 +52,10 @@ require('telescope').setup {
 -- To get fzf loaded and working with telescope, you need to call
 -- load_extension, somewhere after setup function:
 require('telescope').load_extension('fzf')
+
+vim.keymap.set('n', '<leader>y', function()
+  local pos = vim.fn.getpos('.')
+  vim.cmd('tabnew %')
+  vim.fn.setpos('.', pos)
+end)
 EOF
