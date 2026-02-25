@@ -73,6 +73,37 @@ highlight link NERDTreeDir Statement
 highlight link NERDTreeOpenable NERDTreeDir
 highlight link NERDTreeClosable NERDTreeOpenable
 
+" Treesitter highlight groups
+highlight link @comment Comment
+highlight link @string String
+highlight link @number Number
+highlight link @boolean Boolean
+highlight link @constant Constant
+highlight link @function Function
+highlight link @function.call Function
+highlight link @method Function
+highlight link @method.call Function
+highlight link @keyword Statement
+highlight link @keyword.function Statement
+highlight link @keyword.return Statement
+highlight link @conditional Statement
+highlight link @repeat Statement
+highlight link @operator Normal
+highlight link @punctuation Delimiter
+highlight link @punctuation.bracket Delimiter
+highlight link @punctuation.delimiter Delimiter
+highlight link @type Type
+highlight link @type.builtin Type
+highlight link @variable Normal
+highlight link @variable.builtin Identifier
+highlight link @parameter Identifier
+highlight link @property Identifier
+highlight link @field Identifier
+highlight link @constructor Type
+highlight link @namespace Type
+highlight link @include Statement
+highlight link @module Type
+
 " Neovim terminal colors
 let g:terminal_color_foreground = "#e6e1dc"
 let g:terminal_color_background = "#2b2b2b"

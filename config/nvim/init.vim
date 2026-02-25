@@ -30,6 +30,16 @@ nmap <leader>g <cmd>Telescope live_grep<cr>
 nnoremap <leader>b <cmd>Telescope buffers<cr>
 
 lua<<EOF
+-- Add nvim-treesitter runtime to runtimepath for queries
+vim.opt.runtimepath:append(vim.fn.stdpath('data') .. '/plugged/nvim-treesitter/runtime')
+
+-- Enable treesitter highlighting for all buffers
+vim.api.nvim_create_autocmd("FileType", {
+  callback = function()
+    pcall(vim.treesitter.start)
+  end,
+})
+
 require'hop'.setup()
 require('mini.fuzzy').setup({})
 require('mini.surround').setup({})
