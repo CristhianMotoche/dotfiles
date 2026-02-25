@@ -7,7 +7,7 @@
   cl = clone
   st = status
   br = branch
-  cmt = commit
+  cm = commit
   rct = rebase --continue
   dch = diff --cached
   pu = ![[ $(git config "branch.$(git symbolic-ref --short HEAD).merge") = '' ]] \
