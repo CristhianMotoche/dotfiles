@@ -8,7 +8,7 @@ set noswapfile
 set rnu
 set number
 syntax enable
-colorscheme miniwinter
+colorscheme delek
 set shiftwidth=2
 set autoread
 set nowrap

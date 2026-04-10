@@ -14,7 +14,7 @@ source ~/.config/nvim/config/binds.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/config/coc.vim
 
-let g:coc_node_path = '~/.asdf/installs/nodejs/18.9.1/bin/node'
+let g:coc_node_path = expand('~/.asdf/shims/node')
 let g:ale_disable_lsp = 1
 let g:ale_linters_ignore = {
 \  "haskell": ["ghc_mod", "hie", "ghc", "cabal_ghc", "hdevtools"]
