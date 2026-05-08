@@ -1,4 +1,3 @@
-Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'phaazon/hop.nvim', {'branch': 'v0.1'}
 Plug 'rking/ag.vim'

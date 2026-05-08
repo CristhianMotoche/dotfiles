@@ -1,3 +1,6 @@
+" Telescope
+nnoremap <C-p> :Telescope find_files<CR>
+
 nnoremap    <F3> :<C-U>setlocal lcs=tab:>-,trail:·,eol:$ list! list? <CR>
 
 " contro-s saving
@@ -60,7 +63,7 @@ nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>d :GitGutterToggle<CR>
 nmap <leader><S-d> :GitGutterDisable<CR>:Gdiff<CR>zR
 nmap <F8> :TagbarToggle<CR>
-map <Leader>c ggVG"*y
+map <Leader>ca ggVG"*y
 map <Leader>e :e <C-R>=expand("%:p:h") . '/'<CR>
 map <Leader>v :vnew <C-R>=expand("%:p:h") . '/'<CR>
 map <leader>r :source ~/.config/nvim/init.vim<CR>:set wrap!<CR>
@@ -71,6 +74,10 @@ map <leader>rl :w<Bar>execute 'silent !tmux send-keys -t bottom :r ENTER'<CR>
 map <leader>rm :w<Bar>execute 'silent !tmux send-keys -t bottom :main ENTER'<CR>
 
 map <leader>T :terminal<CR>
+
+" Copy filename to clipboard
+nmap <leader>cf :let @+ = expand('%:t')<CR>:echo 'Copied: ' . expand('%:t')<CR>
+nmap <leader>cp :let @+ = expand('%:p')<CR>:echo 'Copied: ' . expand('%:p')<CR>
 
 " Buffers
 map gb :bp<CR>

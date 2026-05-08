@@ -9,7 +9,6 @@ call g:plug#end()
 
 " CONFIG FILES
 source ~/.config/nvim/config/basic.vim
-source ~/.config/nvim/config/ctrlp.vim
 source ~/.config/nvim/config/binds.vim
 source ~/.config/nvim/config/whitespace.vim
 source ~/.config/nvim/config/coc.vim
