@@ -56,7 +56,6 @@ inoremap <leader>s <C-O>:update<CR><ESC>
 nnoremap <leader>v <C-w>v
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>o :NERDTreeFind<CR>
-nmap <leader>m :make<CR>
 nmap <leader>q :q<CR>
 nmap <leader><S-q> :q<CR> :Gedit<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
